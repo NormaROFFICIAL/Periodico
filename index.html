@@ -1,52 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: rgb(179, 193, 235);
-        }
-        
-        .content {
-            display: none;
-        }
-        
-        #home {
-            display: block;
-        }
-        
-        #about {
-            display: none;
-        }
-        
-        #contact {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norma Mendoza</title>
 </head>
 <body>
-    <div class="container mt-4">
-        <div class="btn-group">
-            <button class="btn btn-primary" onclick="showContent('home')">Home</button>
-            <button class="btn btn-primary" onclick="showContent('about')">About</button>
-            <button class="btn btn-primary" onclick="showContent('contact')">Contact</button>
+    <h1>PERIODICO</h1>
+    <p class="themeable">Este es un espacio Bisonte para que te enteres de cualquier asunto relacionado al Instituto tecnologico de Chihuahua II.</p>
+    <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+    </label>
+
+   <!-- Formulario emergente -->
+   <button class="miBoton"
+   id="mostrarFormulario">Ingresa aquí</button>
+<div class="formulario" id="formulario">
+    <span class="cerrar" id="cerrarFormulario">&times;</span> <!-- Añade un botón de cierre -->
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido(:</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesion con tu correo institucional</p>
+                <label>
+                    <i class='bx bx-envelope' ></i>
+                    <input type="email" placeholder="Correo electronico institucional">
+                </label>
+                <label>
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" placeholder="Contraseña">
+                </label>
+                <input type="button" value="Iniciar Sesión">
+            </div>
         </div>
-    </div>
-
-    <div id="home" class="container content">
-        <h1>Norma Graciela Mendoza Ruiz</h1>
-    </div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/88IHRF4uyJU?si=p9UW0H_EIAAKoDxq" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <video width="320" height="240" controls>
-            <source src="complementos/'I See The Light' from Tangled but they are ducks.mp4" type="video/mp4">
-          </video>
-
-          <audio controls>
-            <source src="complementos/Hola_ Adiós_ Burbuja.mp3" type="audio/mpeg">
-          </audio>
-    </div>
-
+</div>
+</body>
+</html>

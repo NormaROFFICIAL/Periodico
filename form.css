@@ -1,0 +1,43 @@
+.miBoton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ACA0F2;
+    color: #F4F2FF;
+    border-radius: 20px;
+    padding: 10px 20px; /* Aumenta el padding para hacer el botón más grande */
+    outline: none;
+}
+
+.cerrar {
+    position: fixed;
+    right: 20px; /* Ajusta la distancia desde la derecha */
+}
+
+.info-childs{
+    text-align: center;
+}
+
+.miBoton.dark-theme {
+    background-color: #F4F2FF;
+    color: #ACA0F2;
+}
+
+/* Estilos para el formulario emergente */
+.formulario {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}  
+
+.formulario.dark-theme {
+    background-color: #ACA0F2;
+    color: #F4F2FF;
+}

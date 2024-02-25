@@ -1,2 +1,0 @@
-# Periodico
-Periódico escolar

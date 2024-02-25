@@ -1,0 +1,89 @@
+/* Estilos para el tema claro */
+body {
+    background-color: #F4F2FF;
+    color: #3C305C;
+}
+
+/* Estilos para el tema oscuro */
+body.dark-theme {
+    background-color: #3C305C;
+    color: #F4F2FF;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif; /* Establece la fuente */
+    font-size: 6em; /* Tamaño grande de fuente */
+    text-align: center; /* Centra el texto */
+    position: absolute; /* Establece la posición absoluta */
+    top: 30%; /* Ubica el elemento en la mitad superior */
+    left: 50%; /* Ubica el elemento en la mitad izquierda */
+    transform: translate(-50%, -50%); /* Centra el elemento */
+}
+
+.themeable {
+    font-family: 'Libre Baskerville', serif; /* Establece la fuente */
+    font-size: 130%; /* Tamaño grande de fuente */
+    text-align: center; /* Centra el texto */
+    position: absolute; /* Establece la posición absoluta */
+    top: 42%; /* Ubica el elemento en la mitad superior */
+    left: 50%; /* Ubica el elemento en la mitad izquierda */
+    transform: translate(-50%, -50%); /* Centra el elemento */ 
+}
+/* CSS para el switch */
+.switch {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde arriba */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    width: 40px; /* Reducción del ancho */
+    height: 20px; /* Reducción de la altura */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Reducción de la altura */
+    width: 16px; /* Reducción del ancho */
+    left: 2px; /* Ajuste del posicionamiento */
+    bottom: 2px; /* Ajuste del posicionamiento */
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #ACA0F2;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #ACA0F2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px); /* Ajuste de la distancia del deslizador */
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 20px; /* Reducción del radio del borde */
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
